@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+	    <Link rel ="stylesheet" type="text/css" HREF="./stylesheet.css">
+	    <title>Homepage</title>
+	    
+	    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+		<script src="/js/ButtonEvent.js"></script>
+	    
+    </head>
+
+
+    <body>
+
+
+		<table>
+			<tr>
+				<td>
+			    	<button type ="submit" name="class one" onclick="firstButtonClicked('C:\\python27\\pythonw.exe F:/ostfalia/praxis/Take Class/test.py')" id=""firstButtonClicked>
+					<img class="foo" src="images/pepper_lesson_one.png" alt="SomeAlternateText" />
+					</button> <hr>
+					{% if data %}
+					{(data)}
+					{(endif)}
+				</td>
+				<td>
+					<button onclick="location.href='{% url 'script' %}'" type ="submit" name="class two" id="secondButtonClicked" >
+					<img class="foo" src="images/pepper_lesson_one.png" alt="SomeAlternateText" /></td>
+					</button>
+				<td>
+					<button type ="submit" name="class three" onclick="thirdButtonClicked()" >
+					<img class="foo" src="images/pepper_lesson_one.png" alt="SomeAlternateText" /></td>
+					</button>
+				<td>
+					<button type ="submit" name="class four" onclick="" style="background:url(') ">
+					<img class="foo" src="images/pepper_lesson_one.png" alt="SomeAlternateText" /></td>
+					</button>
+			</tr>
+			<tr>
+				<td>
+			    	<button type ="submit" name="class five" onclick="" >
+					<img class="foo" src="images/pepper_lesson_two.png" alt="SomeAlternateText" />
+					</button>
+				</td>
+				<td>
+					<button type ="submit" name="class six" onclick="" >
+					<img class="foo" src="images/pepper_lesson_two.png" alt="SomeAlternateText" />
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+			    	<button type ="submit" name="class seven" onclick="" >
+					<img class="foo" src="images/pepper_lesson_two.png" alt="SomeAlternateText" />
+					</button>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+			    	<button type ="submit" name="class eight" onclick="" >
+					<img class="foo" src="images/pepper_lesson_two.png" alt="SomeAlternateText" />
+					</button>
+				</td>
+
+			</tr>
+
+					<div id='box' class='box'>
+						<div class = "box-in"></div>
+					</div>
+
+			
+		</table>
+
+
+		<script type="text/javascript">
+				  		box.onclick = function(){
+	  			cancelAnimationFrame(timer);   //获取当前毫秒数
+	  			var startTime = +new Date();   //获取当前页面高度
+
+	  			var b = document.body.scrollTop || document.documentElement.scrollTop;
+	  			var d = 500;
+	  			var c = b;
+	  			timer = requestAnimationFrame(function func(){
+	  				var t = d = Math.max(0,startTime - (+new Date()) + d)
+	  				document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+	  				timer = requestAnimationFrame(func);
+	  				if(t == d){
+	  					cancelAnimationFrame(timer);
+	  				}
+	  			})
+	  		}
+		</script>
+
+    </body>
+</html>

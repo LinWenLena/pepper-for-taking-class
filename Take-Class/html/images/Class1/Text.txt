@@ -1,0 +1,2 @@
+Hello, I.m Pepper.
+I'm Pepper.I'm a semi-humanoid robot manufactured by SoftBank Robotics.I can do some specific behaviors to help humans do something.

@@ -1,0 +1,114 @@
+body{
+	background-image: url('file:///F:/ostfalia/praxis/Take Class/html/images/background.png');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	}
+
+table {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+button {
+	padding: 0;
+	border-radius: 30px;
+	margin:30px;
+	outline: none;
+}
+.yes{
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 100px;
+    color: #fff;
+    height:200px;
+    width: 1080px;
+    margin-top: 50px;
+    outline: none;
+    text-orientation: none;
+    box-shadow: 0 9px #999;
+}
+
+.yes:active{
+    box-shadow: 0 5px #666;
+    transform: :translateY(10px);
+}
+
+.no{
+    margin-top: 80px;
+    background-color: #D3D3D3;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 100px;
+    height:200px;
+    width: 1080px;
+    outline: none;
+    text-orientation: none;
+    box-shadow: 0 9px #999;
+}
+.no:active{
+    box-shadow: 0 5px #666;
+    transform: :translateY(10px);
+}
+
+
+
+img {
+	width: 200px;
+	height: 200px;
+	border-radius: 30px;
+	margin: 0px;	    
+}
+
+
+
+.box{
+    content:'back to top';
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:50px;
+    width: 70px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    
+    top:50%
+}
+.box:hover .box-in{
+    
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'back to top';
+    width: 50px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    
+    visibility: visible;
+    display:inline-block;
+    height:45px;
+    width: 45px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+
+

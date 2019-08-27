@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="homepage-6f960d" version="0.0.0">
+ <names>
+  <name lang="en_US">Take_Class</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="bahavior_class1">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="behavior_mainpage">
+   <nature>interactive</nature>
+   <triggerSentences>
+    <sentence lang="en_US">Can you take a class?</sentence>
+    <sentence lang="en_US">Can you teach us how to use yourself?</sentence>
+   </triggerSentences>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[
+]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="behavior_class2">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="behavior_try">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="Q&amp;A">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>
